@@ -1,0 +1,72 @@
+
+@font-face{
+    font-family: 'Raleway';
+    src: url('Raleway-VariableFont_wght.ttf') format('truetype'),
+    url('Raleway-Bold.ttf') format('truetype'),
+    url('Raleway-Light.ttf') format('truetype'),
+    url('Raleway-Regular.ttf') format('truetype'),
+}
+html{
+    font-family: 'Raleway', sans-serif;
+}
+
+.grid-header{
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    border: 1px black dotted;
+
+}
+
+.logo{
+    align-self: flex-end;
+}
+
+.grid-header__ul{
+    display: grid;
+    list-style-type: none;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
+
+.nav__link {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav__link a{
+    display: flex;
+    align-items: flex-end;
+    text-decoration: none;
+    background: #eee;
+    height: 50px;
+    box-sizing: border-box;
+}
+a:hover{
+    color:#0065FC
+}
+
+
+.hebergement{
+    grid-column-start: 1;
+    display: flex;
+    justify-content: center;
+    border-top: 2px #0065FC solid;
+
+}
+
+.activites{
+    grid-column-start: 2;
+    border: 1px red solid;
+    display: flex;
+    justify-content: center;
+
+}
+
+.inscrire{
+    grid-column-start: 3;
+    font-weight: bold;
+    border: 1px green solid;
+    display: flex;
+    justify-content: center;
+
+}
