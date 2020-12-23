@@ -5,8 +5,7 @@
         <link rel="stylesheet" href="style.css">
         <title>Reservia</title>
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
-        <script src="https://kit.fontawesome.com/2138d9e291.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">        <script src="https://kit.fontawesome.com/2138d9e291.js" crossorigin="anonymous"></script>
     </Head>
 
     <body>
@@ -14,13 +13,39 @@
         <header class="header">
             <img class="header__logo" src="/images/logo/Reservia.svg" alt="Logo Reservia">
             <nav class="nav">
+                <a class="nav__link nav__link--active" href="#">Hébergements</a>
+                <a class="nav__link nav__link--default" href="#">Activités</a>
+                <a class="nav__link nav__link--signup" href="#">S'inscrire</a>
                 <div class="animation start-hosting"></div>
-                <a class="nav__link" href="#">Hébergements</a>
-                <a class="nav__link" href="#">Activités</a>
-                <a class="nav__link" href="#">S'inscrire</a>
             </nav>
         </header>
         <!-- Header -->
+
+        <!-- Main -->
+        <main class="main">
+            <!-- Search -->
+            <section class="search">
+                <header class="search__header">
+                    <h1 class="search__header__title"><br>Trouvez votre hébergement pour des vacances de rêve</h1>
+                    <p class="search__header__subtitle">En plein centre de ville ou en pleine nature</p>
+                </header>
+                <form class="search__location" action="">
+                    <i class="fas fa-map-marker-alt search__location__icon"></i>
+                    <input class="search__location__input" type="search" placeholder="Où voulez-vous aller?"/>
+                    <button class="search__location__btn" type="button">Rechercher</button>
+                    <i class="fas fa-search search__location__btn--mobile"></i>
+                </form>
+
+
+            </section>
+            <!-- Search -->
+            <!-- Hosting -->
+            <!-- Hosting -->
+
+            
+
+        </main>
+        <!-- Main -->
 
 
 
