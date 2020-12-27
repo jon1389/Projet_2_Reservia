@@ -147,7 +147,7 @@ a:nth-child(2):hover ~ .animation{
     padding: 0 30px;
     display: grid;
     grid-template-columns: 3fr 1fr;
-    grid-template-rows: 1fr 1fr ;
+    grid-template-rows: 1fr 600px;
     grid-column-gap: 20px;
     grid-row-gap: 20px;
     
@@ -365,6 +365,10 @@ a:nth-child(2):hover ~ .animation{
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     width: 100%;
+}
+
+.img--top{
+    object-position: top;
 }
 
 .activitiesArea__part__figure__img--small{
