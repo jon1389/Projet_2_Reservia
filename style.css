@@ -112,7 +112,15 @@ a:nth-child(2):hover ~ .animation{
 .search__filters__filter__wrapped:hover{
     background-color: #f2f2f2;
 }
-.search__filters__filter__icon{
+.icon--child{
+    color: #0065FC;
+    background: #DEEBFF;
+    padding: 13px 15px;
+    margin: -2px;
+    margin-right: 5px;
+    border-radius: 50%;
+}
+.search__filters__filter__icon--default{
     color: #0065FC;
     background: #DEEBFF;
     padding: 13px;
@@ -140,6 +148,7 @@ a:nth-child(2):hover ~ .animation{
     display: flex;
     align-self: center;
     margin-left: 10px;
+    margin-bottom: 15px;
     font-size: 13px;
     font-weight: 500;
 }
@@ -250,13 +259,13 @@ a:nth-child(2):hover ~ .animation{
 .MostPopular__title{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 32px;
 }
 
 .MostPopular__offer__card{
     text-decoration: none;
     color: black;
-    margin-bottom: 15px;
+    margin: 15px 0;
+
 }
 
 .MostPopular__offer__card__part{
@@ -427,6 +436,29 @@ a:nth-child(2):hover ~ .animation{
         z-index: 1;
         background: #0065FC;
         width: 120px;
+    }
+    .activitiesArea{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-column-gap: 30px;
+        grid-template-rows: 60px 60px 60px 60px 60px;
+        grid-row-gap: 30px;
+        width: 100%;
+    }
+    .activitiesArea__part__figure__img--small{
+        height: 100px;
+    }
+    
+    .activitiesArea__part__figure__img--medium{
+        height: 190px;
+    
+    }
+    
+    .activitiesArea__part__figure__img--large{
+        height: 370px;
+    }
+    .activitiesArea__part__figure__figcaption__title{
+        font-size: 12px;
     }
 }
 
