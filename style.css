@@ -72,6 +72,7 @@ a:nth-child(2):hover ~ .animation{
     background-color: #F2F2F2;
     border-bottom-left-radius: 10px;
     border-top-left-radius :10px;
+    
 }
 
 .location__input{
@@ -79,6 +80,7 @@ a:nth-child(2):hover ~ .animation{
     padding: 9px;
     font-weight: bold;
     font-size: 17px;
+    
 }
 
 #location__btn--mobile{
@@ -461,6 +463,9 @@ a:nth-child(2):hover ~ .animation{
     margin: 5px 0;
 }
 
+/* Ecran intermédiaire*/
+
+
 /* version tablette */
 @media screen and (min-width: 740px) and (max-width: 979px){
     .nav{
@@ -565,19 +570,24 @@ a:nth-child(2):hover ~ .animation{
         z-index: 2;
     }
 
-
-
     .location__btn{
         position:absolute;
         border: 2px #0065FC solid;
         padding: 11px 11px;
         font-size: 15px;
-        left: 285px;
+        left: 260px;
         color: white;
         border-radius: 10px;
         background-color: #0065FC;
     }
 
+    .search__location{
+        width: 100%;
+    }
+    
+    .location__input{
+        width: 200px;
+    }
     .location__btn--default{
         display: none;
     }
@@ -692,7 +702,7 @@ a:nth-child(2):hover ~ .animation{
         height: 150px;
     }
 
-    .footer{
+    .footer__container{
         display: flex;
         flex-direction: column;
     }
