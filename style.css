@@ -80,6 +80,10 @@ a:nth-child(2):hover ~ .animation{
     padding: 9px;
     font-weight: bold;
     font-size: 17px;
+    -webkit-border: 2px #F2F2F2 solid;
+    -webkit-padding: 9px;
+    -webkit-font-weight: bold;
+    -webkit-font-size: 17px;
     -webkit-appearance: none;    
 }
 
@@ -546,11 +550,14 @@ a:nth-child(2):hover ~ .animation{
     }
 
     .nav__link--signup{
-        grid-column-start: 4;
+        grid-column-start: 3;
+        grid-column-end: 5;
         grid-row-start: 1;
         grid-row-end: 3;
         display: flex;
-        align-items: center;    
+        align-items: flex-end;
+        justify-content: flex-end;
+        padding-right: 20px;    
     }
 
     nav .animation{
@@ -595,6 +602,7 @@ a:nth-child(2):hover ~ .animation{
     
     .location__input{
         width: 200px;
+        font-size: 15px;
     }
     .location__btn--default{
         display: none;
@@ -704,6 +712,10 @@ a:nth-child(2):hover ~ .animation{
     .activitiesArea{
         display: flex;
         flex-direction: column;
+    }
+
+    .activitiesArea__part{
+        padding-bottom: 30px;
     }
 
     .activitiesArea__img{
