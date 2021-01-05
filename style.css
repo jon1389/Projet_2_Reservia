@@ -212,7 +212,11 @@ a:nth-child(2):hover ~ .animation{
     display: flex;
     text-decoration: none;
     color: black;
-    width: 280px;
+    -moz-width: 280px;
+    -webkit-width: 280px;
+    -ms-width: 280px;
+    -o-width: 280px;
+
     font-size: 15px;
 }
 
