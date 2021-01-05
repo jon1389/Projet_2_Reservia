@@ -212,7 +212,7 @@ a:nth-child(2):hover ~ .animation{
     display: flex;
     text-decoration: none;
     color: black;
-    width: auto;
+    width: 280px;
     font-size: 15px;
 }
 
@@ -224,6 +224,7 @@ a:nth-child(2):hover ~ .animation{
     border-radius: 15px;
     background-color: white;
     height: 190px;
+    width: 100%;
     max-width: 280px;
     padding: 2px 2px;   
     margin: 15px 15px;
