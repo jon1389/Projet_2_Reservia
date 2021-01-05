@@ -232,7 +232,7 @@ a:nth-child(2):hover ~ .animation{
     border-radius: 15px;
     background-color: white;
     height: 190px;
-    width: 290%;
+    width: 290px;
     max-width: 280px;
     padding: 2px 2px;   
     margin: 15px 15px;
