@@ -2,6 +2,7 @@
 <html lang="fr">
     <Head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
         <title>Reservia</title>
         <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -17,6 +18,7 @@
                 <a class="nav__link nav__link--default" href="#activities">Activités</a>
                 <a class="nav__link nav__link--signup" href="#">S'inscrire</a>
                 <div class="animation start-hosting"></div>
+                <div class="animation--mobile"></div>
             </nav>
         </header>
         <!-- Header -->
@@ -38,22 +40,30 @@
             <article class="search__filters">
                 <h3 class="filters__title">Filtres</h3>
                 <div class="filters__filter">
-                    <div class="filter__wrapped">
-                        <i class="filter__icon--default fas fa-money-bill-wave "></i>
+                    <a href="#" class="filter__wrapped">
+                        <div class="icon__circle">
+                            <i class="filter__icon fas fa-money-bill-wave "></i>
+                        </div>
                         <b class="filter__title">Économique</b>    
-                    </div>
-                    <div class="filter__wrapped">
-                        <i class="icon--child filter__icon fas fa-child"></i>
+                    </a>
+                    <a href="#" class="filter__wrapped">
+                        <div class="icon__circle">
+                            <i class="filter__icon fas fa-child"></i>
+                        </div>
                         <b class="filter__title">Familial</b>
-                    </div>
-                    <div class="filter__wrapped">
-                        <i class="filter__icon--default fas fa-heart"></i>
+                    </a>
+                    <a href="#" class="filter__wrapped">
+                        <div class="icon__circle">
+                            <i class="filter__icon fas fa-heart"></i>
+                        </div>
                         <b class="filter__title">Romantique</b>
-                    </div>
-                    <div class="filter__wrapped">
-                        <i class="filter__icon--default fas fa-dog"></i>
+                    </a>
+                    <a href="#" class="filter__wrapped">
+                        <div class="icon__circle">
+                            <i class="filter__icon fas fa-dog"></i>
+                        </div>
                         <b class="filter__title">Animaux autorisés</b>
-                    </div>
+                    </a>
                 </div>
             </article>
             <div class="search__result">
@@ -284,22 +294,24 @@
         <!-- Main -->
         <!-- Footer -->
 		<footer class="footer">
-            <article class="footer__section">
-                <h4 class="footer__title">A propos</h4>
-                <a class="footer__link" href="#">Fonctionnement du site</a>
-                <a class="footer__link" href="#">Conditions générales de vente</a>
-                <a class="footer__link" href="#">Données et confidentialité</a>
-            </article>
-            <article class="footer__section">
-                <h4 class="footer__title">Nos hébergements</h4>
-                <a class="footer__link" href="#">Charte qualité</a>
-                <a class="footer__link" href="#">Soumettre votre hôtel</a>
-            </article>
-            <article class="footer__section">
-                <h4 class="footer__title">Assistance</h4>
-                <a class="footer__link" href="#">Centre d'aide</a>
-                <a class="footer__link" href="#">Nous contacter</a>
-            </article>
+            <div class="footer__container"> 
+                <article class="footer__section">
+                    <h4 class="footer__title">A propos</h4>
+                    <a class="footer__link" href="#">Fonctionnement du site</a>
+                    <a class="footer__link" href="#">Conditions générales de vente</a>
+                    <a class="footer__link" href="#">Données et confidentialité</a>
+                </article>
+                <article class="footer__section">
+                    <h4 class="footer__title">Nos hébergements</h4>
+                    <a class="footer__link" href="#">Charte qualité</a>
+                    <a class="footer__link" href="#">Soumettre votre hôtel</a>
+                </article>
+                <article class="footer__section">
+                    <h4 class="footer__title">Assistance</h4>
+                    <a class="footer__link" href="#">Centre d'aide</a>
+                    <a class="footer__link" href="#">Nous contacter</a>
+                </article>
+            </div>
 		</footer>		
     </body>
 </html>
