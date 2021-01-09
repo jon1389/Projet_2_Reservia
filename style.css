@@ -7,12 +7,13 @@ body{
 .header{
     display: flex;
     justify-content: space-between;
+    padding: 0px 30px;
+    padding-top: 30px;
     max-width: 1500px;
     margin: auto;
 }
 
 .header__logo{
-    padding: 15px 30px;
 }
 
 .nav{
@@ -209,18 +210,17 @@ a:nth-child(2):hover ~ .animation{
 .hosting__offer{
     display: flex;
     flex-flow: row wrap ;
+    column-gap: 30px;
     justify-content: space-between;
 }
 
 .hosting__card{
     display: flex;
+    justify-content: center;
     text-decoration: none;
     color: black;
-    width: 290px;
-    -moz-width: 290px;
-    -webkit-width: 290px;
-    -ms-width: 290px;
-    -o-width: 290px;
+    max-width: 30%;
+    width: 100%;
     font-size: 15px;
 }
 
@@ -232,8 +232,7 @@ a:nth-child(2):hover ~ .animation{
     border-radius: 15px;
     background-color: white;
     height: 190px;
-    width: 290px;
-    max-width: 280px;
+    min-width: 100%;
     padding: 2px 2px;   
     margin: 15px 15px;
     box-shadow: 0px 1px 10px #c8c8c8;
@@ -326,7 +325,6 @@ a:nth-child(2):hover ~ .animation{
 .MostPopular__FigureCaption{
     display: flex;
     flex-wrap: wrap;
-    align-items:space-between;
     margin-top: -10px;
     padding: 0 10px;
 }
@@ -360,10 +358,6 @@ a:nth-child(2):hover ~ .animation{
     grid-column-gap: 30px;
     grid-template-rows: 75px 75px 75px 75px 75px;
     grid-row-gap: 30px;
-    -moz-grid-row-gap: 30px;
-    -webkit-grid-row-gap: 30px;
-    -ms-grid-row-gap: 30px;
-    -o-grid-row-gap: 30px;
     width: 100%;
 }
 
@@ -476,78 +470,50 @@ a:nth-child(2):hover ~ .animation{
     margin: 5px 0;
 }
 
-/* Ecran intermédiaire*/
-
-
-/* version tablette */
-@media screen and (min-width: 740px) and (max-width: 979px){
-    .nav{
-        display: grid;
-        grid-template-columns: 120px 120px 120px;
-        padding: 0 10px;
-    }
-
-    nav .animation{
-        position: absolute;
-        height: 3px;
-        top: 0%;
-        z-index: 1;
-        background: #0065FC;
-        width: 120px;
-    }
-
-    .activitiesArea{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-column-gap: 30px;
-        grid-template-rows: 60px 60px 60px 60px 60px;
-        grid-row-gap: 30px;
+/* Version tablette*/
+@media screen and (min-width: 740px) and (max-width: 1022px){
+    .hosting__card{
+        min-width: 100%;
+    }    
+}
+@media screen and (min-width: 1022px) and (max-width: 1274px){
+    .hosting__card{
+        max-width: 46%;
         width: 100%;
     }
-
-    .activitiesArea__img--small{
-        height: 100px;
-    }
-    
-    .activitiesArea__img--medium{
-        height: 190px;
-    }
-    
-    .activitiesArea__img--large{
-        height: 370px;
-    }
-
-    .activitiesArea__figcaption__title{
-        font-size: 12px;
-    }
-
 }
 
 /* version mobile */
 @media screen and (max-width: 739px){
+    .header{
+        margin: 0 0;
+        padding: 0 0;
+    }
     .header__logo{
         position: absolute;
+        padding: 20px 15px;
     }
 
     .nav{
         position: relative;
-        width: 100%;
+        min-width: 100%;
         padding: 0 0;
+        margin:0 0;
         display:grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 2fr 1fr;
+        grid-row-gap: 10px;
     }
 
     .nav__link--active{
         grid-area:3/1/3/3;
-        padding: 15px 10px;
+        padding-top: 30px;
     }
 
     .nav__link--default{
         grid-column-start: 3;
         grid-column-end: 5;
         grid-row-start: 3;
-        padding: 15px 10px;
     }
 
     .nav__link--signup{
@@ -566,7 +532,6 @@ a:nth-child(2):hover ~ .animation{
         display: grid;
         grid-area:4/1/4/3;
         height: 3px;
-        bottom: 2;
         z-index: 2;
         background: #0065FC;
         width: 100%;
@@ -576,7 +541,6 @@ a:nth-child(2):hover ~ .animation{
         display: grid;
         grid-area:4/1/4/5;
         height: 3px;
-        bottom: 2;
         z-index: 1;
         background: #f2f2f2;
         width: 100%;
@@ -587,22 +551,26 @@ a:nth-child(2):hover ~ .animation{
     }
 
     .location__btn{
-        position:absolute;
+        position:relative;
         border: 2px #0065FC solid;
         padding: 11px 11px;
         font-size: 15px;
-        left: 260px;
         color: white;
+        left: -8px;
         border-radius: 10px;
         background-color: #0065FC;
     }
 
+    .search{
+        padding: 0 15px;
+        margin: 0 0;
+    }
     .search__location{
-        width: 100%;
+        min-width: 100%;
     }
     
     .location__input{
-        width: 200px;
+        width: 100%;
         font-size: 15px;
     }
     .location__btn--default{
@@ -636,7 +604,7 @@ a:nth-child(2):hover ~ .animation{
         padding: 0 0;
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 0.41fr 1fr 1fr;
+        grid-template-rows: 0.38fr 0.9fr 1fr;
         grid-row-gap: 10px;
         margin: 0 0;   
     }
@@ -685,7 +653,7 @@ a:nth-child(2):hover ~ .animation{
     .hosting__card{
         text-decoration: none;
         color: black; 
-        width: 98%;
+        min-width: 98%;
     }
     
     .hosting__card1{
@@ -695,7 +663,7 @@ a:nth-child(2):hover ~ .animation{
         border: 2px white solid;
         border-radius: 15px;
         background-color: white;
-        height: 190px;
+        max-height: 190px;
         min-width: 100%;
         padding: 2px 2px;   
         margin: 15px 0px;
@@ -713,10 +681,6 @@ a:nth-child(2):hover ~ .animation{
     .activitiesArea{
         display: flex;
         flex-direction: column;
-    }
-
-    .activitiesArea__part{
-        padding-bottom: 30px;
     }
 
     .activitiesArea__img{
