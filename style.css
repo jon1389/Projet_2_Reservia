@@ -80,12 +80,7 @@ a:nth-child(2):hover ~ .animation{
     border: 2px #F2F2F2 solid;
     padding: 9px;
     font-weight: bold;
-    font-size: 17px;
-    -webkit-border: 2px #F2F2F2 solid;
-    -webkit-padding: 9px;
-    -webkit-font-weight: bold;
-    -webkit-font-size: 17px;
-    -webkit-appearance: none;    
+    font-size: 17px; 
 }
 
 #location__btn--mobile{
