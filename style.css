@@ -3,10 +3,9 @@ body{
     padding: 0;
     font-family: 'Raleway', sans-serif;
 }
-h3{
-    font-size: 25px;
-    margin-bottom: 10px;
 
+h1{
+    margin-top: 0;
 }
 
 h2{
@@ -14,8 +13,14 @@ h2{
     font-weight:bold;
 }
 
+h3{
+    font-size: 21px;
+    margin-bottom: 10px;
+}
+
 h4{
     font-size: 16px;
+    margin: 5px 0;
 }
 
 .header{
@@ -123,14 +128,12 @@ a:nth-child(2):hover ~ .animation{
 
 .search__filters{
     display: flex;
-    align-items: center;
 }
 
 .filters__title{
     font-size: 17px;
     font-weight: bold;
-    display: flex;
-    align-self: center;
+    margin-top: 2.2em;
 }
 
 
@@ -254,6 +257,7 @@ a:nth-child(2):hover ~ .animation{
 
 .hosting__img{
     object-fit: cover ;
+    object-position: 50% 78%;
     width: 100%;
     max-height: 115px;
     border-top-left-radius: 15px;
@@ -345,6 +349,7 @@ a:nth-child(2):hover ~ .animation{
 
 .MostPopular__FigureCaption__title{
     margin-bottom: -10px;
+    margin-top: 15px;
 }
 
 .MostPopular__subtitle{
@@ -450,8 +455,8 @@ a:nth-child(2):hover ~ .animation{
 
 .activitiesArea__figcaption{
     display: flex;
-    flex-wrap: wrap;
-    align-content: flex-start;
+    align-items: center;
+    height: 45px;
     font-size: 13px;
     padding-left: 15px;
     font-weight: bold;
@@ -568,7 +573,8 @@ a:nth-child(2):hover ~ .animation{
     .location__btn{
         position:relative;
         border: 2px #0065FC solid;
-        padding: 11px 11px;
+        width: 50px;
+        height: 50px;
         font-size: 15px;
         color: white;
         left: -8px;
