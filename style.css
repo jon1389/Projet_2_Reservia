@@ -3,6 +3,20 @@ body{
     padding: 0;
     font-family: 'Raleway', sans-serif;
 }
+h3{
+    font-size: 25px;
+    margin-bottom: 10px;
+
+}
+
+h2{
+    font-size: 20px;
+    font-weight:bold;
+}
+
+h4{
+    font-size: 16px;
+}
 
 .header{
     display: flex;
@@ -61,19 +75,28 @@ a:nth-child(2):hover ~ .animation{
 .search__title{
     font-size: 22px;
     font-weight: bold;
+    margin-bottom: 1px;
+}
+
+.search__subtitle{
+    font-size: 15px;
+    font-weight: normal;
 }
 
 .search__location{
     display: flex;
+    padding-top: 10px;
+    height: 50px;
 }
 
 .location__icon{
     border: 2px #F2F2F2 solid;
-    padding: 10px;
+    font-size: 18px;
+    padding: 14px;
     background-color: #F2F2F2;
     border-bottom-left-radius: 10px;
-    border-top-left-radius :10px;
-    
+    border-top-left-radius :10px;   
+    align-self: center;
 }
 
 .location__input{
@@ -91,6 +114,7 @@ a:nth-child(2):hover ~ .animation{
     border: 2px #0065FC solid;
     padding: 10px 15px;
     font-size: 15px;
+    margin-left: -2px;
     color: white;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -100,15 +124,15 @@ a:nth-child(2):hover ~ .animation{
 .search__filters{
     display: flex;
     align-items: center;
-    margin-top: 20px;
 }
 
 .filters__title{
     font-size: 17px;
+    font-weight: bold;
     display: flex;
-    align-self: flex-start;
-    margin-top: 37px;
+    align-self: center;
 }
+
 
 .filters__filter{
     display: flex;
@@ -119,17 +143,17 @@ a:nth-child(2):hover ~ .animation{
 .filter__wrapped{
     display: flex;
     text-decoration: none;
-    padding-right: 15px;
+    height: 40px;
     margin: 15px 15px;
     border: 2px #F2F2F2 solid;
     border-radius: 20px;
 }
 
 .icon__circle{
-    border: 1px #DEEBFF solid;
-    width: 35px;
-    height: 35px;
-    margin: -1px -1px;
+    border: 2px #DEEBFF solid;
+    width: 40px;
+    height: 40px;
+    margin: -2px -3px;
     border-radius: 50%;
     background: #DEEBFF;
     display: flex;
@@ -150,7 +174,7 @@ a:nth-child(2):hover ~ .animation{
     align-self: center;
     font-size: 17px;
     color: black;
-    padding-left: 10px;
+    padding: 0 20px;
 }
 
 .search__result{
@@ -184,11 +208,6 @@ a:nth-child(2):hover ~ .animation{
     grid-row-gap: 20px;
     max-width: 1500px;
     margin: auto;    
-}
-
-.h2{
-    font-size: 20px;
-    font-weight:bold;
 }
 
 .hosting{
@@ -349,6 +368,7 @@ a:nth-child(2):hover ~ .animation{
 
 .activitiesArea{
     display: grid;
+    margin-top: 20px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-column-gap: 30px;
     grid-template-rows: 75px 75px 75px 75px 75px;
@@ -417,21 +437,21 @@ a:nth-child(2):hover ~ .animation{
 }
 
 .activitiesArea__img--small{
-    height: 120px;
+    height: 125px;
 }
 
 .activitiesArea__img--medium{
-    height: 225px;
+    height: 230px;
 }
 
 .activitiesArea__img--large{
-    height: 435px;
+    height: 440px;
 }
 
 .activitiesArea__figcaption{
     display: flex;
     flex-wrap: wrap;
-    align-items: flex-start;
+    align-content: flex-start;
     font-size: 13px;
     padding-left: 15px;
     font-weight: bold;
