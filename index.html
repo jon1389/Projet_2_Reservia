@@ -3,16 +3,17 @@
     <Head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="./style.css">
         <title>Reservia</title>
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">        <script src="https://kit.fontawesome.com/2138d9e291.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">        
+        <script src="https://kit.fontawesome.com/2138d9e291.js" crossorigin="anonymous"></script>
     </Head>
 
     <body>
         <!-- Header -->
         <header class="header">
-            <a href="">
+            <a href="/index.html">
                 <img class="header__logo" src="images/logo/Reservia.svg" alt="Logo Reservia">
             </a>
             <nav class="nav">
@@ -27,10 +28,10 @@
 
         <!-- Search -->
         <section class="search">
-            <section class="search__section">
-                <h1 class="search__title"><br>Trouvez votre hébergement pour des vacances de rêve</h1>
+            <article class="search__article">
+                <h1 class="search__title">Trouvez votre hébergement pour des vacances de rêve</h1>
                 <h2 class="search__subtitle">En plein centre de ville ou en pleine nature</h2>
-            </section>
+            </article>
             <form class="search__location" action="ToBeChecked">
                 <i class="fas fa-map-marker-alt location__icon"></i>
                 <input class="location__input" type="search" placeholder="Où voulez-vous aller ?"/>
@@ -39,7 +40,7 @@
                     <i id="location__btn--mobile" class="fas fa-search"></i>
                 </button>
             </form>
-            <article class="search__filters">
+            <div class="search__filters">
                 <span class="filters__title">Filtres</span>
                 <div class="filters__filter">
                     <a href="#" class="filter__wrapped">
@@ -67,7 +68,7 @@
                         <b class="filter__title">Animaux autorisés</b>
                     </a>
                 </div>
-            </article>
+            </div>
             <div class="search__result">
                 <i class="result__icon fas fa-info"></i>
                 <b class="result__text">Plus de 500 logements sont disponibles dans cette ville</b>

@@ -4,10 +4,6 @@ body{
     font-family: 'Raleway', sans-serif;
 }
 
-h1{
-    margin-top: 0;
-}
-
 h2{
     font-size: 20px;
     font-weight:bold;
@@ -32,9 +28,6 @@ h4{
     margin: auto;
 }
 
-.header__logo{
-}
-
 .nav{
     display: grid;
     grid-template-columns: 142px 142px 142px;
@@ -46,7 +39,6 @@ h4{
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    z-index: 0;
     color: rgb(70, 70, 70);
 }
 
@@ -54,7 +46,6 @@ nav .animation{
     position: absolute;
     height: 3px;
     top: 0;
-    z-index: 1;
     background: #0065FC;
     width: 142px;
 }
