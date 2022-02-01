@@ -23,3 +23,6 @@ En tant que stagiaire, la mission est de transformer une maquette en site web
 - N’utilise pas de framework ou pré-compilateur CSS pour ce projet (comme SASS par exemple)
 - Le code devra utiliser les balises sémantiques et ne doit contenir aucune erreur ni alerte au validateur W3C HTML et CSS.
 - Le site devra être compatible avec les dernières versions de Chrome et Firefox.
+
+### Lien vers la page :
+https://jon1389.github.io/Projet_2_Reservia/
